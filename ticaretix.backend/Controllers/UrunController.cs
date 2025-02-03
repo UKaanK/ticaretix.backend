@@ -61,5 +61,20 @@ namespace ticaretix.backend.Controllers
             var result = await _sender.Send(command);
             return Ok(result);
         }
+
+        [HttpGet("GetUrunlerByCategory/{id}")]
+        public async Task<IActionResult> GetUrunlerByCategoryAsync([FromRoute] int id)
+        {
+            var command = new GetUrunlerByKategoriAsyncQuery(id);
+            var result = await _sender.Send(command);
+            return Ok(result);
+        }
+        [HttpGet("SearchUrunAsync/")]
+        public async Task<IActionResult> GetSearchUrunAsync([FromQuery] string name, [FromQuery] int? categoryId)
+        {
+            var command = new GetSearchUrunAsyncQuery(name,categoryId);
+            var result = await _sender.Send(command);
+            return Ok(result);
+        }
     }
 }

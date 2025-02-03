@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ticaretix.Core.Entities;
 using ticaretix.Core.Interfaces;
 using ticaretix.Infrastructure.Data;
@@ -55,5 +50,38 @@ namespace ticaretix.Infrastructure.Repositories
             }
             return entity;
         }
+        public async Task<IEnumerable<UrunlerEntity>> SearchUrunAsync(string searchTerm, int? categoryId = null)
+        {
+            var query = dbContext.Urunler.AsQueryable();
+
+            // Eğer kategoriId parametresi verilmişse, kategoriye göre filtrele
+            if (categoryId.HasValue)
+            {
+                query = query.Where(x => x.KategoriID == categoryId.Value);
+            }
+
+            // Eğer searchTerm boş değilse, veritabanında LIKE araması yap
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                query = query.Where(x => EF.Functions.Like(x.UrunAdi, $"%{searchTerm}%"));
+            }
+
+            // Eğer searchTerm boşsa, tüm ürünleri döndür
+            if (string.IsNullOrWhiteSpace(searchTerm))
+            {
+                query = query; // Burada herhangi bir ek filtreleme yapmıyoruz, yani tüm ürünleri getiriyoruz
+            }
+
+            return await query.ToListAsync();
+        }
+
+
+        public async Task<IEnumerable<UrunlerEntity>> GetUrunlerByCategoryAsync(int categoryId)
+        {
+            return await dbContext.Urunler
+                                  .Where(x => x.KategoriID == categoryId)
+                                  .ToListAsync();
+        }
+
     }
 }

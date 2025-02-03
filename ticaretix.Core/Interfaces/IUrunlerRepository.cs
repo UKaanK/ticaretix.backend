@@ -14,5 +14,8 @@ namespace ticaretix.Core.Interfaces
         Task<UrunlerEntity> AddUrunAsync(UrunlerEntity entity);
         Task<UrunlerEntity> UpdateUrunAsync(int urunId, UrunlerEntity entity);
         Task<bool> DeleteUruneAsync(int urunId);
+        Task<IEnumerable<UrunlerEntity>> SearchUrunAsync(string searchTerm, int? categoryId = null);
+        Task<IEnumerable<UrunlerEntity>> GetUrunlerByCategoryAsync(int categoryId);
+
     }
 }

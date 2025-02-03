@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ticaretix.Core.Entities;
 using ticaretix.Core.Interfaces;
@@ -14,56 +15,111 @@ namespace ticaretix.Infrastructure.Repositories
     {
         public async Task<KullaniciEntity> AddKullaniciAsync(KullaniciEntity entity)
         {
+            // 🔴 Email ve şifre boş olamaz
+            if (string.IsNullOrWhiteSpace(entity.Email) || string.IsNullOrWhiteSpace(entity.Sifre))
+                throw new ArgumentException("Email ve şifre boş olamaz!");
+
+            // 🔴 Email formatı geçerli mi?
+            if (!Regex.IsMatch(entity.Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                throw new ArgumentException("Geçersiz email formatı!");
+
+            // 🔴 Aynı email ile kayıtlı kullanıcı var mı?
+            bool exists = await dbContext.Kullanicilar.AnyAsync(x => x.Email == entity.Email);
+            if (exists)
+                throw new InvalidOperationException("Bu e-posta adresi zaten kayıtlı!");
+
+            // 🔴 Şifre uzunluğu kontrolü
+            if (entity.Sifre.Length < 6)
+                throw new ArgumentException("Şifre en az 6 karakter olmalıdır!");
+
             await dbContext.Kullanicilar.AddAsync(entity);
             await dbContext.SaveChangesAsync();
 
-            // Kullanıcıya ait bir sepet otomatik olarak oluşturalım
+            // 🔴 Kullanıcı için otomatik sepet oluştur
             var yeniSepet = new SepetEntity
             {
-                KullaniciID = entity.KullaniciID, // Kullanıcı ID'sini alıyoruz
+                KullaniciID = entity.KullaniciID,
                 OlusturmaTarihi = DateTime.Now
             };
 
             await dbContext.Sepetler.AddAsync(yeniSepet);
-            await dbContext.SaveChangesAsync();
+            var result = await dbContext.SaveChangesAsync();
+
+            // 🔴 Eğer sepet oluşturulamazsa hata fırlat
+            if (result == 0)
+                throw new InvalidOperationException("Sepet oluşturulurken hata oluştu!");
+
             return entity;
         }
 
-        public async Task<bool> DeleteKullaniciAsync(string emaik)
+        public async Task<bool> DeleteKullaniciAsync(string email)
         {
-            var kullanici = await dbContext.Kullanicilar.FirstOrDefaultAsync(x => x.Email == emaik);
-            if (kullanici is not null) {
-                dbContext.Kullanicilar.Remove(kullanici);
-                return await dbContext.SaveChangesAsync()>0;
+            // 🔴 Email boş mu?
+            if (string.IsNullOrWhiteSpace(email))
+                throw new ArgumentException("Email boş olamaz!");
+
+            var kullanici = await dbContext.Kullanicilar.FirstOrDefaultAsync(x => x.Email == email);
+            if (kullanici is null)
+                throw new KeyNotFoundException("Silinmek istenen kullanıcı bulunamadı!");
+
+            // 🔴 Kullanıcıya ait sepeti de silelim
+            var kullaniciSepeti = await dbContext.Sepetler.FirstOrDefaultAsync(x => x.KullaniciID == kullanici.KullaniciID);
+            if (kullaniciSepeti is not null)
+            {
+                dbContext.Sepetler.Remove(kullaniciSepeti);
             }
-            return false;
-        
+
+            dbContext.Kullanicilar.Remove(kullanici);
+            return await dbContext.SaveChangesAsync() > 0;
         }
 
         public async Task<KullaniciEntity> GetKullaniciByEmailAsync(string email)
         {
-            return await dbContext.Kullanicilar.FirstOrDefaultAsync(x => x.Email == email);
-        }
+            // 🔴 Email boş mu?
+            if (string.IsNullOrWhiteSpace(email))
+                throw new ArgumentException("Email boş olamaz!");
 
+            var kullanici = await dbContext.Kullanicilar.FirstOrDefaultAsync(x => x.Email == email);
+            if (kullanici is null)
+                throw new KeyNotFoundException("Kullanıcı bulunamadı!");
+
+            return kullanici;
+        }
 
         public async Task<IEnumerable<KullaniciEntity>> GetKullanicilar()
         {
-           return await dbContext.Kullanicilar.ToListAsync();
+            return await dbContext.Kullanicilar.ToListAsync();
         }
 
         public async Task<KullaniciEntity> UpdateKullaniciAsync(string email, KullaniciEntity entity)
         {
-            var kullanici =await dbContext.Kullanicilar.FirstOrDefaultAsync(x=>x.Email == email);
-            if (kullanici is not null)
+            // 🔴 Email boş mu?
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(entity.Email))
+                throw new ArgumentException("Email boş olamaz!");
+
+            var kullanici = await dbContext.Kullanicilar.FirstOrDefaultAsync(x => x.Email == email);
+            if (kullanici is null)
+                throw new KeyNotFoundException("Güncellenmek istenen kullanıcı bulunamadı!");
+
+            // 🔴 Eğer email değiştiriliyorsa, yeni email başka kullanıcıya ait mi kontrolü
+            if (email != entity.Email)
             {
-                kullanici.KullaniciAdi = entity.KullaniciAdi;
-                kullanici.Sifre = entity.Sifre;
-                kullanici.Role = entity.Role;
-                kullanici.Email = email;
-                await dbContext.SaveChangesAsync();
-                return kullanici;
+                bool emailExists = await dbContext.Kullanicilar.AnyAsync(x => x.Email == entity.Email);
+                if (emailExists)
+                    throw new InvalidOperationException("Bu e-posta adresi zaten başka bir kullanıcı tarafından kullanılıyor!");
             }
-            return entity;
+
+            // 🔴 Şifre uzunluğu kontrolü
+            if (!string.IsNullOrEmpty(entity.Sifre) && entity.Sifre.Length < 6)
+                throw new ArgumentException("Şifre en az 6 karakter olmalıdır!");
+
+            kullanici.KullaniciAdi = entity.KullaniciAdi;
+            kullanici.Sifre = entity.Sifre;
+            kullanici.Role = entity.Role;
+            kullanici.Email = entity.Email;
+
+            await dbContext.SaveChangesAsync();
+            return kullanici;
         }
     }
 }

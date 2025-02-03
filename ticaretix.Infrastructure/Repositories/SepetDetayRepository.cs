@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using ticaretix.Core.Entities;
 using ticaretix.Core.Interfaces;
@@ -14,21 +13,51 @@ namespace ticaretix.Infrastructure.Repositories
     {
         public async Task<SepetDetaylariEntity> AddSepetUrunAsync(SepetDetaylariEntity entity)
         {
-            await dbContext.SepetDetaylari.AddAsync(entity);
-            await dbContext.SaveChangesAsync();
-            return entity;
+            //  Ürün ve Sepet geçerli mi?
+            if (entity.UrunID <= 0 || entity.SepetID <= 0)
+                throw new ArgumentException("Geçersiz ürün veya sepet ID!");
+
+            // 🔴 Aynı ürün sepette var mı?
+            var existingProduct = await dbContext.SepetDetaylari
+                .FirstOrDefaultAsync(x => x.SepetID == entity.SepetID && x.UrunID == entity.UrunID);
+
+            if (existingProduct != null)
+            {
+                // Eğer ürün zaten sepette varsa, miktarı artır
+                existingProduct.Miktar += entity.Miktar;
+
+                // Güncellenen sepet detayını kaydet
+                dbContext.SepetDetaylari.Update(existingProduct);
+                await dbContext.SaveChangesAsync();
+                return existingProduct;
+            }
+            else
+            {
+                // Sepette ürün yoksa, yeni ürünü ekle
+                await dbContext.SepetDetaylari.AddAsync(entity);
+                await dbContext.SaveChangesAsync();
+                return entity;
+            }
         }
 
 
-        public async Task<bool> DeleteSepetUrunAsync(int urunId,int sepetId)
+        public async Task<bool> DeleteSepetUrunAsync(int urunId, int sepetId)
         {
-            var sepet = await dbContext.SepetDetaylari.FirstOrDefaultAsync(x => x.UrunID == urunId);
-            if (sepet is not null&& sepet.SepetID==sepetId)
-            {
-                dbContext.SepetDetaylari.Remove(sepet);
-                return await dbContext.SaveChangesAsync()>0;
-            }
-            return false;
+            // Ürün ve sepet ID geçerli mi?
+            if (urunId <= 0 || sepetId <= 0)
+                throw new ArgumentException("Geçersiz ürün veya sepet ID!");
+
+            var sepetDetay = await dbContext.SepetDetaylari
+                .FirstOrDefaultAsync(x => x.UrunID == urunId && x.SepetID == sepetId);
+
+            // 🔴 Ürün ve sepet bulundu mu?
+            if (sepetDetay is null)
+                throw new KeyNotFoundException("Sepette bu ürün bulunamadı!");
+
+            dbContext.SepetDetaylari.Remove(sepetDetay);
+            var result = await dbContext.SaveChangesAsync();
+
+            return result > 0;
         }
 
         public async Task<IEnumerable<SepetDetaylariEntity>> GetSepetDetay()
@@ -38,10 +67,19 @@ namespace ticaretix.Infrastructure.Repositories
 
         public async Task<List<SepetDetaylariEntity>> GetSepetDetayByIdAsync(int id)
         {
-            return await dbContext.SepetDetaylari
-                    .Where(x => x.SepetID == id) // Belirtilen SepetID'ye ait tüm detayları al
-                    .Include(x => x.Urun) // Eğer Urun ile ilişkili detayları da istiyorsan ekle
-                    .ToListAsync(); // Liste olarak dön
+            // 🔴 SepetID geçerli mi?
+            if (id <= 0)
+                throw new ArgumentException("Geçersiz sepet ID!");
+
+            var sepetDetaylari = await dbContext.SepetDetaylari
+                .Where(x => x.SepetID == id)
+                .Include(x => x.Urun) // İlişkili ürünleri de yükle
+                .ToListAsync();
+
+            if (sepetDetaylari is null || sepetDetaylari.Count == 0)
+                throw new KeyNotFoundException("Bu sepete ait detay bulunamadı!");
+
+            return sepetDetaylari;
         }
     }
 }

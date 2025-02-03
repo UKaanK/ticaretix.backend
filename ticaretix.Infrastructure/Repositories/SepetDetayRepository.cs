@@ -36,10 +36,12 @@ namespace ticaretix.Infrastructure.Repositories
             return await dbContext.SepetDetaylari.ToListAsync();
         }
 
-        public async Task<SepetDetaylariEntity> GetSepetDetayByIdAsync(int id)
+        public async Task<List<SepetDetaylariEntity>> GetSepetDetayByIdAsync(int id)
         {
-            return  await dbContext.SepetDetaylari.FirstOrDefaultAsync(x => x.SepetID == id);
-           
+            return await dbContext.SepetDetaylari
+                    .Where(x => x.SepetID == id) // Belirtilen SepetID'ye ait tüm detayları al
+                    .Include(x => x.Urun) // Eğer Urun ile ilişkili detayları da istiyorsan ekle
+                    .ToListAsync(); // Liste olarak dön
         }
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\interfaces\\isepetdetaylar\u0131repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\interfaces\\isepetdetaylar\u0131repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\sepetdetayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\sepetdetayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\interfaces\\isepetdetaylar\u0131repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\interfaces\\isepetdetaylar\u0131repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\queries\\sepetqueries\\getsepetdetaybyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 400,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
@@ -158,8 +158,7 @@
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T00:37:52.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T00:37:52.936Z"
             },
             {
               "$type": "Document",
@@ -171,8 +170,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\KategoriQueries\\GetKategoriByNameQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T23:53:53.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T23:53:53.593Z"
             },
             {
               "$type": "Document",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetKullaniciByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:17:06.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:17:06.634Z"
             },
             {
               "$type": "Document",
@@ -197,8 +194,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetAllKullaniciQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:17:05.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:17:05.628Z"
             },
             {
               "$type": "Document",
@@ -210,8 +206,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\KullaniciCommands\\DeleteKullaniciCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:07:45.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:07:45.369Z"
             },
             {
               "$type": "Document",
@@ -223,8 +218,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\KullaniciCommands\\UpdateKullaniciCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:07:44.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:07:44.185Z"
             },
             {
               "$type": "Document",
@@ -236,8 +230,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\KategoriCommands\\AddKategoriCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:01:47.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:01:47.556Z"
             },
             {
               "$type": "Document",
@@ -249,8 +242,7 @@
               "RelativeToolTip": "ticaretix.Core\\Entities\\SepetDetaylariEntity.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:04:04.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T21:04:04.345Z"
             },
             {
               "$type": "Document",
@@ -262,18 +254,17 @@
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:36:05.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:36:05.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SepetController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\SepetController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\SepetController.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\SepetController.cs",
               "RelativeToolTip": "ticaretix.backend\\Controllers\\SepetController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T21:32:07.008Z",
               "EditorCaption": ""
@@ -288,7 +279,19 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\UrunQueries\\GetAllUrunQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:00:56.44Z",
+              "WhenOpened": "2025-02-02T20:00:56.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SepetDetayRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
+              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
+              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T23:25:40.346Z",
               "EditorCaption": ""
             },
             {
@@ -301,8 +304,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T22:32:07.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T22:32:07.907Z"
             }
           ]
         },
@@ -320,8 +322,7 @@
               "RelativeToolTip": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T00:42:24.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T00:42:24.677Z"
             },
             {
               "$type": "Document",
@@ -331,7 +332,7 @@
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\SepetQueries\\GetSepetDetayByIdQuery.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\SepetQueries\\GetSepetDetayByIdQuery.cs",
               "RelativeToolTip": "ticaretix.Application\\Queries\\SepetQueries\\GetSepetDetayByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T23:51:32.571Z",
               "EditorCaption": ""
@@ -346,8 +347,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetDetayQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T23:50:59.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T23:50:59.78Z"
             },
             {
               "$type": "Document",
@@ -359,8 +359,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\SepetCommands\\DeleteSepetUrunCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T23:44:43.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T23:44:43.617Z"
             },
             {
               "$type": "Document",
@@ -372,8 +371,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\SepetCommands\\AddSepetUrunCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T23:44:21.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T23:44:21.702Z"
             },
             {
               "$type": "Document",
@@ -385,31 +383,17 @@
               "RelativeToolTip": "ticaretix.backend\\Controllers\\KullaniciController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:15:06.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:15:06.844Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SepetDetayRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwCoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T23:25:40.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ISepetDetaylar\u0131Repository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
               "RelativeToolTip": "ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T23:22:32.679Z",
               "EditorCaption": ""
@@ -424,8 +408,7 @@
               "RelativeToolTip": "ticaretix.Core\\Entities\\CategoryEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T22:44:45.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T22:44:45.417Z"
             },
             {
               "$type": "Document",
@@ -437,8 +420,7 @@
               "RelativeToolTip": "ticaretix.Core\\Entities\\KullaniciEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T22:44:07.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T22:44:07.51Z"
             },
             {
               "$type": "Document",
@@ -450,8 +432,7 @@
               "RelativeToolTip": "ticaretix.Core\\Interfaces\\IKullaniciRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:21:51.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T21:21:51.132Z"
             },
             {
               "$type": "Document",
@@ -463,8 +444,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\KullaniciCommands\\AddKullaniciCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:21:17.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T21:21:17.738Z"
             },
             {
               "$type": "Document",
@@ -476,8 +456,7 @@
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAUwDoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T21:18:44.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T21:18:44.803Z"
             },
             {
               "$type": "Document",
@@ -489,8 +468,7 @@
               "RelativeToolTip": "ticaretix.Core\\Entities\\SepetEntity.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:59:39.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:59:39.014Z"
             },
             {
               "$type": "Document",
@@ -502,8 +480,7 @@
               "RelativeToolTip": "ticaretix.Core\\Interfaces\\ISepetRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:59:02.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:59:02.313Z"
             },
             {
               "$type": "Document",
@@ -515,8 +492,7 @@
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:53:15.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:53:15.741Z"
             },
             {
               "$type": "Document",
@@ -528,8 +504,7 @@
               "RelativeToolTip": "ticaretix.backend\\Controllers\\UrunController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAADwvykAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:21:03.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:21:03.383Z"
             },
             {
               "$type": "Document",
@@ -541,8 +516,7 @@
               "RelativeToolTip": "ticaretix.Application\\Queries\\UrunQueries\\GetUrunByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T20:01:18.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T20:01:18.59Z"
             },
             {
               "$type": "Document",
@@ -554,8 +528,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\UrunCommands\\UpdateUrunCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:58:05.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:58:05.562Z"
             },
             {
               "$type": "Document",
@@ -567,8 +540,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\UrunCommands\\DeleteUrunCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:57:50.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:57:50.881Z"
             },
             {
               "$type": "Document",
@@ -580,8 +552,7 @@
               "RelativeToolTip": "ticaretix.Application\\Commands\\UrunCommands\\AddUrunCommand.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:57:40.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:57:40.23Z"
             },
             {
               "$type": "Document",
@@ -593,8 +564,7 @@
               "RelativeToolTip": "ticaretix.Core\\Entities\\UrunlerEntity.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAywB8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:50:23.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:50:23.367Z"
             }
           ]
         }

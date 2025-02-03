@@ -17,3 +17,4 @@ C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\t
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Infrastructure\obj\Debug\net8.0\ticaretix.Infrastructure.pdb
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Infrastructure\obj\Debug\net8.0\ticaretix.Infrastructure.genruntimeconfig.cache
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Infrastructure\obj\Debug\net8.0\ref\ticaretix.Infrastructure.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Infrastructure\obj\Debug\net8.0\ticaretix.Infrastructure.sourcelink.json

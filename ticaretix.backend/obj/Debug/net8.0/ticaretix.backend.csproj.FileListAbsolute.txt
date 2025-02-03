@@ -174,3 +174,4 @@ C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\t
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ticaretix.backend.pdb
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ticaretix.backend.genruntimeconfig.cache
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ref\ticaretix.backend.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ticaretix.backend.sourcelink.json

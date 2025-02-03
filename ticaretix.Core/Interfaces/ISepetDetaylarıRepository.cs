@@ -10,7 +10,7 @@ namespace ticaretix.Core.Interfaces
     public interface ISepetDetaylarıRepository
     {
         Task<IEnumerable<SepetDetaylariEntity>> GetSepetDetay();
-        Task<SepetDetaylariEntity> GetSepetDetayByIdAsync(int id);
+        Task<List<SepetDetaylariEntity>> GetSepetDetayByIdAsync(int id);
         Task<SepetDetaylariEntity> AddSepetUrunAsync(SepetDetaylariEntity entity);
         //Task<SepetDetaylariEntity> UpdateUrunAsync(int urunId, SepetDetaylariEntity entity);
         Task<bool> DeleteSepetUrunAsync(int urunId, int sepetId);

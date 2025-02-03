@@ -9,10 +9,10 @@ using ticaretix.Core.Interfaces;
 
 namespace ticaretix.Application.Queries.SepetQueries
 {
-    public record GetSepetDetayByIdQuery(int id):IRequest<SepetDetaylariEntity>;
-    public class GetSepetDetayByIdQueryHandler(ISepetDetaylarıRepository sepetDetaylarıRepository) : IRequestHandler<GetSepetDetayByIdQuery, SepetDetaylariEntity>
+    public record GetSepetDetayByIdQuery(int id):IRequest<List<SepetDetaylariEntity>>;
+    public class GetSepetDetayByIdQueryHandler(ISepetDetaylarıRepository sepetDetaylarıRepository) : IRequestHandler<GetSepetDetayByIdQuery, List<SepetDetaylariEntity>>
     {
-        public async Task<SepetDetaylariEntity> Handle(GetSepetDetayByIdQuery request, CancellationToken cancellationToken)
+        public async Task<List<SepetDetaylariEntity>> Handle(GetSepetDetayByIdQuery request, CancellationToken cancellationToken)
         {
             return await sepetDetaylarıRepository.GetSepetDetayByIdAsync(request.id);
         }

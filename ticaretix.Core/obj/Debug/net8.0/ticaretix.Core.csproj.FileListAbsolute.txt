@@ -1,0 +1,12 @@
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\bin\Debug\net8.0\ticaretix.Core.deps.json
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\bin\Debug\net8.0\ticaretix.Core.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\bin\Debug\net8.0\ticaretix.Core.pdb
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.csproj.AssemblyReference.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.AssemblyInfoInputs.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.AssemblyInfo.cs
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.csproj.CoreCompileInputs.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\refint\ticaretix.Core.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ticaretix.Core.pdb
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Core\obj\Debug\net8.0\ref\ticaretix.Core.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "diCeK2VY+zWaL6yccgYHWqMAUAvYE5Vvxe9uOM32W9Y=",
+  "Source": "ticaretix.backend",
+  "BasePath": "_content/ticaretix.backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eNWHzZUfIek=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\ticaretix.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Casper EXCALIBUR\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

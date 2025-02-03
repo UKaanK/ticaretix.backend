@@ -1,0 +1,312 @@
+[
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KategoriController",
+    "Method": "AddlKategoriAsync",
+    "RelativePath": "api/Kategori/AddKategori",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryEntity",
+        "Type": "ticaretix.Core.Entities.CategoryEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KategoriController",
+    "Method": "DeleteKategoriByNameAsync",
+    "RelativePath": "api/Kategori/DeleteKategoriByName/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KategoriController",
+    "Method": "GetAlKategoriAsync",
+    "RelativePath": "api/Kategori/GetAllKategori",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KategoriController",
+    "Method": "GetKategoriByNameAsync",
+    "RelativePath": "api/Kategori/GetKategoriByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KategoriController",
+    "Method": "UpdateKategoriByNameAsync",
+    "RelativePath": "api/Kategori/UpdateKategoriByName/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryEntity",
+        "Type": "ticaretix.Core.Entities.CategoryEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KullaniciController",
+    "Method": "AddKullaniciAsync",
+    "RelativePath": "api/Kullanici/AddKullanici",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciEntity",
+        "Type": "ticaretix.Core.Entities.KullaniciEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KullaniciController",
+    "Method": "DeleteKullaniciAsync",
+    "RelativePath": "api/Kullanici/DeleteKullaniciAsync/{email}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KullaniciController",
+    "Method": "GetAlKullaniciAsync",
+    "RelativePath": "api/Kullanici/GetAllKullanici",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KullaniciController",
+    "Method": "GetKullaniciByEmailAsync",
+    "RelativePath": "api/Kullanici/GetKullaniciByEmail/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.KullaniciController",
+    "Method": "UpdateKullaniciAsync",
+    "RelativePath": "api/Kullanici/UpdateKullanici/{email}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "kullaniciEntity",
+        "Type": "ticaretix.Core.Entities.KullaniciEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.SepetController",
+    "Method": "AddSepetUrunAsync",
+    "RelativePath": "api/Sepet/AddSepetUrun",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sepetDetaylariEntity",
+        "Type": "ticaretix.Core.Entities.SepetDetaylariEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.SepetController",
+    "Method": "DeleteSepetUrunAsync",
+    "RelativePath": "api/Sepet/DeleteSepetUrun",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "urunId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sepetId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.SepetController",
+    "Method": "GetSepetAsync",
+    "RelativePath": "api/Sepet/GetSepet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.SepetController",
+    "Method": "GetSepetDetay",
+    "RelativePath": "api/Sepet/GetSepetDetay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.SepetController",
+    "Method": "GetSepetDetayByIdAsync",
+    "RelativePath": "api/Sepet/GetSepetDetayById{sepetId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sepetId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.UrunController",
+    "Method": "AddUrunAsync",
+    "RelativePath": "api/Urun/AddUrun",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "urunlerEntity",
+        "Type": "ticaretix.Core.Entities.UrunlerEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.UrunController",
+    "Method": "DeleteKullaniciAsync",
+    "RelativePath": "api/Urun/DeleteUrunAsync/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.UrunController",
+    "Method": "GetAllUrunlerAsync",
+    "RelativePath": "api/Urun/GetAllUrunler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.UrunController",
+    "Method": "GetUrunByIdAsync",
+    "RelativePath": "api/Urun/GetUrunById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.UrunController",
+    "Method": "UpdateKullaniciAsync",
+    "RelativePath": "api/Urun/UpdateUrun/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "urunlerEntity",
+        "Type": "ticaretix.Core.Entities.UrunlerEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

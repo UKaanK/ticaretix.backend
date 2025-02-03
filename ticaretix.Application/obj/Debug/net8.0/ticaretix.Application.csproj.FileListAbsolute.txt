@@ -1,0 +1,15 @@
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\bin\Debug\net8.0\ticaretix.Application.deps.json
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\bin\Debug\net8.0\ticaretix.Application.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\bin\Debug\net8.0\ticaretix.Application.pdb
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\bin\Debug\net8.0\ticaretix.Core.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\bin\Debug\net8.0\ticaretix.Core.pdb
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.csproj.AssemblyReference.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.AssemblyInfoInputs.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.AssemblyInfo.cs
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.csproj.CoreCompileInputs.cache
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticareti.7E478517.Up2Date
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\refint\ticaretix.Application.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ticaretix.Application.pdb
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.Application\obj\Debug\net8.0\ref\ticaretix.Application.dll

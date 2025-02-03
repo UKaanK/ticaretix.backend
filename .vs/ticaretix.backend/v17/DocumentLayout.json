@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\ticaretix.backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\ticaretix.backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +51,8 @@
       "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\sepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\sepetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\queries\\sepetqueries\\getsepetdetaybyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\commands\\kullanicicommands\\deletekullanicicommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\commands\\kullanicicommands\\deletekullanicicommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\queries\\sepetqueries\\getallsepetdetayquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,11 +162,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 400,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "UrunlerRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
@@ -167,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "GetKategoriByNameQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\KategoriQueries\\GetKategoriByNameQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\KategoriQueries\\GetKategoriByNameQuery.cs",
@@ -179,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "GetKullaniciByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetKullaniciByIdQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetKullaniciByIdQuery.cs",
@@ -191,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "GetAllKullaniciQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetAllKullaniciQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\Kullan\u0131c\u0131Queries\\GetAllKullaniciQuery.cs",
@@ -203,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "DeleteKullaniciCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\KullaniciCommands\\DeleteKullaniciCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\KullaniciCommands\\DeleteKullaniciCommand.cs",
@@ -215,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "UpdateKullaniciCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\KullaniciCommands\\UpdateKullaniciCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\KullaniciCommands\\UpdateKullaniciCommand.cs",
@@ -227,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "AddKategoriCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\KategoriCommands\\AddKategoriCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\KategoriCommands\\AddKategoriCommand.cs",
@@ -239,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "SepetDetaylariEntity.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\SepetDetaylariEntity.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\SepetDetaylariEntity.cs",
@@ -251,20 +263,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs*",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDsAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T19:36:05.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "SepetController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\SepetController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\SepetController.cs",
@@ -277,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "GetAllUrunQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\UrunQueries\\GetAllUrunQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\UrunQueries\\GetAllUrunQuery.cs",
@@ -289,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "SepetDetayRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
@@ -302,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "GetAllSepetQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetQuery.cs",
@@ -316,24 +328,63 @@
         },
         {
           "DockedWidth": 400,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "ticaretix.backend.http",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\ticaretix.backend.http",
+              "RelativeDocumentMoniker": "ticaretix.backend\\ticaretix.backend.http",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\ticaretix.backend.http",
+              "RelativeToolTip": "ticaretix.backend\\ticaretix.backend.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-03T14:49:59.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ticaretix.backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ticaretix.backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-03T14:49:54.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json",
+              "RelativeDocumentMoniker": "ticaretix.backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json",
+              "RelativeToolTip": "ticaretix.backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-03T14:49:23.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "KategoriController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\KategoriController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\KategoriController.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\KategoriController.cs",
               "RelativeToolTip": "ticaretix.backend\\Controllers\\KategoriController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDQAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDQAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T13:11:46.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
@@ -345,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "GetSepetDetayByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\SepetQueries\\GetSepetDetayByIdQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\SepetQueries\\GetSepetDetayByIdQuery.cs",
@@ -358,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "GetAllSepetDetayQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetDetayQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\SepetQueries\\GetAllSepetDetayQuery.cs",
@@ -370,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "DeleteSepetUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\SepetCommands\\DeleteSepetUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\SepetCommands\\DeleteSepetUrunCommand.cs",
@@ -382,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "AddSepetUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\SepetCommands\\AddSepetUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\SepetCommands\\AddSepetUrunCommand.cs",
@@ -394,19 +445,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
               "Title": "KullaniciController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\KullaniciController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\KullaniciController.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\KullaniciController.cs",
               "RelativeToolTip": "ticaretix.backend\\Controllers\\KullaniciController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwDIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:15:06.844Z"
+              "WhenOpened": "2025-02-02T19:15:06.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ISepetDetaylar\u0131Repository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\ISepetDetaylar\u0131Repository.cs",
@@ -419,20 +471,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "CategoryEntity.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\CategoryEntity.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\CategoryEntity.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\CategoryEntity.cs",
               "RelativeToolTip": "ticaretix.Core\\Entities\\CategoryEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T22:44:45.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "KullaniciEntity.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\KullaniciEntity.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\KullaniciEntity.cs",
@@ -444,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "IKullaniciRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\IKullaniciRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\IKullaniciRepository.cs",
@@ -456,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "AddKullaniciCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\KullaniciCommands\\AddKullaniciCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\KullaniciCommands\\AddKullaniciCommand.cs",
@@ -468,20 +520,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "KullaniciRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwDAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T21:18:44.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SepetEntity.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\SepetEntity.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\SepetEntity.cs",
@@ -493,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "ISepetRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\ISepetRepository.cs",
@@ -505,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "SepetRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
@@ -518,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "UrunController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\UrunController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\UrunController.cs",
@@ -531,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "GetUrunByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\UrunQueries\\GetUrunByIdQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\UrunQueries\\GetUrunByIdQuery.cs",
@@ -543,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "UpdateUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\UrunCommands\\UpdateUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\UrunCommands\\UpdateUrunCommand.cs",
@@ -555,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "DeleteUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\UrunCommands\\DeleteUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\UrunCommands\\DeleteUrunCommand.cs",
@@ -567,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AddUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\UrunCommands\\AddUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\UrunCommands\\AddUrunCommand.cs",
@@ -579,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "UrunlerEntity.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\UrunlerEntity.cs",
               "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\UrunlerEntity.cs",

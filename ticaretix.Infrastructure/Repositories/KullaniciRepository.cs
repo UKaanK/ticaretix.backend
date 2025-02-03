@@ -32,6 +32,9 @@ namespace ticaretix.Infrastructure.Repositories
             if (entity.Sifre.Length < 6)
                 throw new ArgumentException("Şifre en az 6 karakter olmalıdır!");
 
+            // ✅ Eksik kayitTarihi alanını ekleyelim
+            entity.KayitTarihi = DateTime.UtcNow; // UTC formatında kayıt tarihi
+
             await dbContext.Kullanicilar.AddAsync(entity);
             await dbContext.SaveChangesAsync();
 
@@ -39,7 +42,7 @@ namespace ticaretix.Infrastructure.Repositories
             var yeniSepet = new SepetEntity
             {
                 KullaniciID = entity.KullaniciID,
-                OlusturmaTarihi = DateTime.Now
+                OlusturmaTarihi = DateTime.UtcNow // UTC kullanarak tarih atama
             };
 
             await dbContext.Sepetler.AddAsync(yeniSepet);
@@ -51,6 +54,7 @@ namespace ticaretix.Infrastructure.Repositories
 
             return entity;
         }
+
 
         public async Task<bool> DeleteKullaniciAsync(string email)
         {

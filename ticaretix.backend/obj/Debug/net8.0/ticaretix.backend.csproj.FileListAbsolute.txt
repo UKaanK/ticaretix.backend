@@ -175,3 +175,8 @@ C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\t
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ticaretix.backend.genruntimeconfig.cache
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ref\ticaretix.backend.dll
 C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\obj\Debug\net8.0\ticaretix.backend.sourcelink.json
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Casper EXCALIBUR\source\repos\ticaretix.backend\src\ticaretix.backend\ticaretix.backend\bin\Debug\net8.0\StackExchange.Redis.dll

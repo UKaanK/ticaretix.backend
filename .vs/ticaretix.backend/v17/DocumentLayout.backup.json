@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\commands\\uruncommands\\updateuruncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\commands\\uruncommands\\updateuruncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\sepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -173,18 +173,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 488,
+          "DockedWidth": 491,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UrunlerRepository.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
               "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAiwAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T00:37:52.936Z",
               "EditorCaption": ""
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "DockedWidth": 312,
+          "DockedWidth": 309,
           "SelectedChildIndex": 22,
           "Children": [
             {
@@ -371,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GetSearchUrunAsyncQuery.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Queries\\UrunQueries\\GetSearchUrunAsyncQuery.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Queries\\UrunQueries\\GetSearchUrunAsyncQuery.cs",
@@ -635,20 +635,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UrunController.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\UrunController.cs",
               "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\UrunController.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\UrunController.cs",
               "RelativeToolTip": "ticaretix.backend\\Controllers\\UrunController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAQwEgAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwEcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T20:21:03.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UpdateUrunCommand.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Commands\\UrunCommands\\UpdateUrunCommand.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Commands\\UrunCommands\\UpdateUrunCommand.cs",

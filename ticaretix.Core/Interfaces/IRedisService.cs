@@ -8,14 +8,24 @@ namespace ticaretix.Core.Interfaces
 {
     public interface IRedisService
     {
-        void SetUserToken(string userId,string deviceId, string token);
-        string GetUserToken(string userId,string deviceId);
-        void RemoveUserToken(string userId,string deviceId);
+        Task SetUserToken(string userId,string deviceId, string token);
+        Task<string> GetUserToken(string userId,string deviceId);
+        Task RemoveUserToken(string userId,string deviceId);
         string GetUserIdByToken(string token);
         void RemoveAllUserTokens(string userId);
         Task<bool> IsRateLimitedAsync(string key);
         Task SetRateLimitAsync(string key, TimeSpan expirationTime);
-       , Task ResetLoginAttemptsAsync(string key);
+        Task ResetLoginAttemptsAsync(string key);
+        Task<bool> IsUserRateLimitedAsync(string userId);
+        Task<bool> IsDeviceRateLimitedAsync(string deviceId);
+        Task IncrementUserLoginAttemptAsync(string userId);
+        Task ResetDeviceLoginAttemptsAsync(string deviceId);
+        Task IncrementDeviceLoginAttemptAsync(string deviceId);
+        Task ResetUserLoginAttemptsAsync(string userId);
+        //Cache İşlemleri
+        Task SetAsync<T>(string key, T value);
+        Task<T> GetAsync<T>(string key);
+        Task RemoveAsync(string key);
 
     }
 }

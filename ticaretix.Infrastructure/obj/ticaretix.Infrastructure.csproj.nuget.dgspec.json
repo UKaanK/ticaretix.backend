@@ -241,6 +241,10 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.8.24, )"

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using ticaretix.Application.Dtos;
 using ticaretix.Application.Interfaces;
@@ -21,7 +18,6 @@ namespace ticaretix.Application.UseCases
             _jwtService = jwtService;
             _redisService = redisService;
         }
-
         public async Task<string> ExecuteAsync(KullaniciLoginDto loginDto, string deviceId)
         {
             if (loginDto == null)
@@ -29,45 +25,51 @@ namespace ticaretix.Application.UseCases
                 throw new ArgumentNullException(nameof(loginDto), "LoginDto null olamaz.");
             }
 
-            var rateLimitKey = $"login_attempts:{loginDto.Email}:{deviceId}";
-
-            // 1. Rate Limit kontrolü
-            if (await _redisService.IsRateLimitedAsync(rateLimitKey))
-            {
-                throw new UnauthorizedAccessException("Too many login attempts. Please try again later.");
-            }
-
-            // Kullanıcıyı al
             var user = await _userRepository.GetKullaniciByEmailAsync(loginDto.Email);
-
             if (user == null)
             {
+                // Kullanıcı bulunamazsa giriş deneme sayısını artır
+                await _redisService.IncrementDeviceLoginAttemptAsync(deviceId);
                 throw new UnauthorizedAccessException("Geçersiz kullanıcı.");
             }
 
-            // Şifre doğrulama
+            string userId = user.KullaniciID.ToString();
+
+            // Kullanıcının veya cihazın rate limit'e takılıp takılmadığını kontrol et
+            if (await _redisService.IsUserRateLimitedAsync(userId) || await _redisService.IsDeviceRateLimitedAsync(deviceId))
+            {
+                throw new UnauthorizedAccessException("Çok fazla başarısız giriş denemesi. Lütfen daha sonra tekrar deneyin.");
+            }
+
+            // Kullanıcının eski token'ını sil
+            await _redisService.RemoveUserToken(userId, deviceId);
+
+            // Şifre doğrulaması
             if (!VerifyPassword(loginDto.Sifre, user.Sifre))
             {
-                // Başarısız giriş denemesi sonrası deneme sayısını arttır
-                await _redisService.SetRateLimitAsync(rateLimitKey, TimeSpan.FromMinutes(1)); // 1 dakika süreyle
+                // Başarısız giriş denemesini artır
+                await _redisService.IncrementUserLoginAttemptAsync(userId);
+                await _redisService.IncrementDeviceLoginAttemptAsync(deviceId);
+
                 throw new UnauthorizedAccessException("Şifre yanlış.");
             }
 
-            // Rate limit'i sıfırla
-            await _redisService.ResetLoginAttemptsAsync(rateLimitKey);
+            // Kullanıcı başarılı giriş yaptıysa, giriş deneme sayısını sıfırla
+            await _redisService.ResetUserLoginAttemptsAsync(userId);
+            await _redisService.ResetDeviceLoginAttemptsAsync(deviceId);
 
-            // JWT token oluştur
+            // Yeni token oluştur ve Redis'e kaydet
             var token = _jwtService.GenerateToken(user);
-
-            // Token'ı Redis'e kaydet
-            _redisService.SetUserToken(user.KullaniciID.ToString(), deviceId, token);
+            await _redisService.SetUserToken(userId, deviceId, token);
 
             return token;
         }
 
+
+
         private bool VerifyPassword(string enteredPassword, string storedPassword)
         {
-            return enteredPassword == storedPassword;  // Burada şifre doğrulama işlemi yapılmalı (hashing vs.)
+            return enteredPassword == storedPassword;  // Burada hash'lenmiş şifre kontrolü yapılmalı
         }
     }
 }

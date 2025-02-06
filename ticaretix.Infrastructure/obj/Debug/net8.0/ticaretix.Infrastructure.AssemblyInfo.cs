@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ticaretix.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c60de9c6638a5cb2d0d879f66c67cb285fc657dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b1b8261b91adcf799b5ce9f3771ef759b2a5536")]
 [assembly: System.Reflection.AssemblyProductAttribute("ticaretix.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ticaretix.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

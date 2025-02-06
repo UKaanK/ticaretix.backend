@@ -1,5 +1,7 @@
 ﻿using StackExchange.Redis;
+using System.Text.Json;
 using ticaretix.Core.Interfaces;
+
 
 namespace ticaretix.Infrastructure.Redis
 {
@@ -15,26 +17,59 @@ namespace ticaretix.Infrastructure.Redis
             _database=redis.GetDatabase();
 
         }
-        public void SetUserToken(string userId, string deviceId, string token)
+        public async Task SetUserToken(string userId, string deviceId, string token)
         {
-            // 1️⃣ Önce eski tokenı bul
-            string oldToken = _database.StringGet($"user_token:{userId}:{deviceId}");
+            // 1️⃣ Kullanıcı ve device'a ait eski token'ı al
+            string oldToken = await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
 
             if (!string.IsNullOrEmpty(oldToken))
             {
                 // 2️⃣ Eğer eski token varsa, onu sil
-                _database.KeyDelete($"token_user:{oldToken}");
+                await _database.KeyDeleteAsync($"token_user:{oldToken}");
+                await _database.KeyDeleteAsync($"user_token:{userId}:{deviceId}");
             }
 
-            // 3️⃣ Yeni tokenı kaydet
-            _database.StringSet($"user_token:{userId}:{deviceId}", token, TimeSpan.FromMinutes(30));
-            _database.StringSet($"token_user:{token}", $"{userId}:{deviceId}", TimeSpan.FromMinutes(30));
+            // 3️⃣ Yeni token'ı kaydet
+            await _database.StringSetAsync($"user_token:{userId}:{deviceId}", token, TimeSpan.FromMinutes(30));
+            await _database.StringSetAsync($"token_user:{token}", $"{userId}:{deviceId}", TimeSpan.FromMinutes(30));
+        }
+
+        public async Task IncrementUserLoginAttemptAsync(string userId)
+        {
+            await _database.StringIncrementAsync($"login_attempts:user:{userId}");
+            await _database.KeyExpireAsync($"login_attempts:user:{userId}", TimeSpan.FromMinutes(5)); // 5 dk sonra sıfırlansın
+        }
+
+        public async Task<bool> IsUserRateLimitedAsync(string userId)
+        {
+            var attempts = await _database.StringGetAsync($"login_attempts:user:{userId}");
+            return attempts != RedisValue.Null && int.Parse(attempts) >= 5;
+        }
+        public async Task IncrementDeviceLoginAttemptAsync(string deviceId)
+        {
+            await _database.StringIncrementAsync($"login_attempts:device:{deviceId}");
+            await _database.KeyExpireAsync($"login_attempts:device:{deviceId}", TimeSpan.FromMinutes(5)); // 5 dk sonra sıfırlansın
+        }
+        public async Task ResetUserLoginAttemptsAsync(string userId)
+        {
+            await _database.KeyDeleteAsync($"login_attempts:user:{userId}");
+        }
+
+        public async Task ResetDeviceLoginAttemptsAsync(string deviceId)
+        {
+            await _database.KeyDeleteAsync($"login_attempts:device:{deviceId}");
         }
 
         public async Task<bool> IsRateLimitedAsync(string key)
         {
             var attempts = await _database.StringGetAsync(key);
             return attempts != RedisValue.Null && int.Parse(attempts) >= 5;  // 5 deneme limitini belirliyoruz
+        }
+
+        public async Task<bool> IsDeviceRateLimitedAsync(string deviceId)
+        {
+            var attempts = await _database.StringGetAsync($"login_attempts:device:{deviceId}");
+            return attempts != RedisValue.Null && int.Parse(attempts) >= 5;
         }
 
         public async Task SetRateLimitAsync(string key, TimeSpan expirationTime)
@@ -59,15 +94,22 @@ namespace ticaretix.Infrastructure.Redis
             await _database.KeyDeleteAsync(key);
         }
 
-        public string GetUserToken(string userId, string deviceId)
+        public async Task<string> GetUserToken(string userId, string deviceId)
         {
-            return _database.StringGet($"user_token:{userId}:{deviceId}");
+            return await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
         }
 
-        public void RemoveUserToken(string userId, string deviceId)
-        {
-            _database.KeyDelete($"user_token:{userId}:{deviceId}");
+        public async Task RemoveUserToken(string userId, string deviceId)
+        { // 1️⃣ Kullanıcı ve cihazla ilişkili token'ı al
+            string token = await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
+            if (!string.IsNullOrEmpty(token))
+            {
+                // 2️⃣ Eski token'ı sil
+                await _database.KeyDeleteAsync($"token_user:{token}");
+                await _database.KeyDeleteAsync($"user_token:{userId}:{deviceId}");
+            }
         }
+
 
         public void RemoveAllUserTokens(string userId)
         {
@@ -80,6 +122,32 @@ namespace ticaretix.Infrastructure.Redis
         {
             return _database.StringGet($"token_user:{token}");
         }
-    
-}
+
+        public async Task SetAsync<T>(string key, T value)
+        {
+            // Nesneyi JSON formatına serileştirme
+            var serializedValue = JsonSerializer.Serialize(value, new JsonSerializerOptions
+            {
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping, // Escape karakterlerini düzenler
+                WriteIndented = true
+            });
+
+            await _database.StringSetAsync(key, serializedValue);
+        }
+
+        public async Task<T> GetAsync<T>(string key)
+        {
+
+            var value = await _database.StringGetAsync(key);
+            if (value.IsNullOrEmpty) return default;
+
+            // JSON string'ini nesneye dönüştürme
+            return JsonSerializer.Deserialize<T>(value);
+        }
+
+        public async Task RemoveAsync(string key)
+        {
+            await _database.KeyDeleteAsync(key);
+        }
+    }
 }

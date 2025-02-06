@@ -20,7 +20,7 @@ namespace ticaretix.backend.Controllers
 
         private readonly IRedisService _redisService;
 
-        public AuthController(IAuthService authService,LoginUseCase loginUseCase,IRedisService redisService)
+        public AuthController(IAuthService authService, LoginUseCase loginUseCase, IRedisService redisService)
         {
             _authService = authService;
             _loginUseCase = loginUseCase;
@@ -74,6 +74,6 @@ namespace ticaretix.backend.Controllers
             _redisService.RemoveAllUserTokens(logoutDto.UserId);
             return Ok(new { message = "Logout successful for all devices" });
         }
-
+    }
 
     }

@@ -28,55 +28,52 @@ namespace ticaretix.backend.Controllers
 
         }
 
+        [HttpGet("get-user-by-token/{token}")]
+        public IActionResult GetUserByToken(string token)
+        {
+            var userId = _redisService.GetUserIdByToken(token);
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return NotFound("User not found for this token.");
+            }
+
+            return Ok(new { userId });
+        }
+
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] KullaniciLoginDto loginDto)
+        public async Task<IActionResult> Login([FromBody] KullaniciLoginDto loginDto, [FromHeader] string deviceId)
         {
             try
             {
-                var token = await _loginUseCase.ExecuteAsync(loginDto);
-                return Ok(new {token });
+                if (string.IsNullOrEmpty(deviceId))
+                    return BadRequest("Device ID is required.");
+
+                var token = await _loginUseCase.ExecuteAsync(loginDto, deviceId);
+                return Ok(new { token });
             }
             catch (UnauthorizedAccessException)
             {
                 return Unauthorized("Invalid credentials");
             }
         }
+
         [HttpPost("logout")]
-        public IActionResult Logout([FromBody] KullanıcıLogoutDto logoutDto)
+        public IActionResult Logout([FromBody] KullanıcıLogoutDto logoutDto, [FromHeader] string deviceId)
         {
+            if (string.IsNullOrEmpty(deviceId))
+                return BadRequest("Device ID is required.");
 
-
-            _redisService.RemoveUserToken(logoutDto.UserId); // Doğru çağrı
-
-            return Ok(new { message = "Logout successful" });
+            _redisService.RemoveUserToken(logoutDto.UserId, deviceId);
+            return Ok(new { message = "Logout successful for this device" });
         }
 
-        [HttpGet("test-token/{userId}")]
-        public IActionResult TestToken(string userId)
+        [HttpPost("logout-all")]
+        public IActionResult LogoutAll([FromBody] KullanıcıLogoutDto logoutDto)
         {
-            var token = _redisService.GetUserToken(userId);
-
-            if (string.IsNullOrEmpty(token))
-            {
-                return NotFound("Token not found.");
-            }
-
-            return Ok(new { token });
+            _redisService.RemoveAllUserTokens(logoutDto.UserId);
+            return Ok(new { message = "Logout successful for all devices" });
         }
 
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] KullaniciEntity newUser)
-        {
-            try
-            {
-                var registeredUser = await _authService.RegisterAsync(newUser);
-                return Ok(registeredUser);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
     }
-}

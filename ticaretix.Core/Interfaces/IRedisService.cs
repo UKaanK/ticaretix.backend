@@ -8,8 +8,14 @@ namespace ticaretix.Core.Interfaces
 {
     public interface IRedisService
     {
-        void SetUserToken(string userId, string token);
-        string GetUserToken(string userId);
-        void RemoveUserToken(string userId);
+        void SetUserToken(string userId,string deviceId, string token);
+        string GetUserToken(string userId,string deviceId);
+        void RemoveUserToken(string userId,string deviceId);
+        string GetUserIdByToken(string token);
+        void RemoveAllUserTokens(string userId);
+        Task<bool> IsRateLimitedAsync(string key);
+        Task SetRateLimitAsync(string key, TimeSpan expirationTime);
+       , Task ResetLoginAttemptsAsync(string key);
+
     }
 }

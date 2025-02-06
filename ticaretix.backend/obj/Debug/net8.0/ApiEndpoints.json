@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "ticaretix.backend.Controllers.AuthController",
+    "Method": "GetUserByToken",
+    "RelativePath": "api/Auth/get-user-by-token/{token}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ticaretix.backend.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -11,6 +27,11 @@
         "Name": "loginDto",
         "Type": "ticaretix.Application.Dtos.KullaniciLoginDto",
         "IsRequired": true
+      },
+      {
+        "Name": "deviceId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -27,37 +48,26 @@
         "Name": "logoutDto",
         "Type": "ticaretix.Application.Dtos.Kullan\u0131c\u0131LogoutDto",
         "IsRequired": true
+      },
+      {
+        "Name": "deviceId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "ticaretix.backend.Controllers.AuthController",
-    "Method": "Register",
-    "RelativePath": "api/Auth/register",
+    "Method": "LogoutAll",
+    "RelativePath": "api/Auth/logout-all",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newUser",
-        "Type": "ticaretix.Core.Entities.KullaniciEntity",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ticaretix.backend.Controllers.AuthController",
-    "Method": "TestToken",
-    "RelativePath": "api/Auth/test-token/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
+        "Name": "logoutDto",
+        "Type": "ticaretix.Application.Dtos.Kullan\u0131c\u0131LogoutDto",
         "IsRequired": true
       }
     ],

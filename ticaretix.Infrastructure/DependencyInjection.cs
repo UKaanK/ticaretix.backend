@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 using ticaretix.Application.Interfaces;
 using ticaretix.Application.Services;
 using ticaretix.Application.UseCases;
@@ -45,10 +46,10 @@ namespace ticaretix.Infrastructure
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<LoginUseCase>();
+            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
+
             services.AddScoped<IRedisService, RedisService>();  // Redis servisini ekleyin
                                                                 // Redis'i yapılandırma
-            var redisConnectionString = configuration.GetValue<string>("Redis:ConnectionString");
-            services.AddSingleton<IRedisService>(provider => new RedisService()); // Parametreyi doğru şekilde ilet
 
 
             return services;

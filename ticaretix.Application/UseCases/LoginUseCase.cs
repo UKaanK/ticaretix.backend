@@ -22,27 +22,52 @@ namespace ticaretix.Application.UseCases
             _redisService = redisService;
         }
 
-        public async Task<string> ExecuteAsync(KullaniciLoginDto loginDto)
+        public async Task<string> ExecuteAsync(KullaniciLoginDto loginDto, string deviceId)
         {
-            var user = await _userRepository.GetKullaniciByEmailAsync(loginDto.Email);
-
-            if (user == null || !VerifyPassword(loginDto.Sifre, user.Sifre))
+            if (loginDto == null)
             {
-                throw new UnauthorizedAccessException("Invalid credentials");
+                throw new ArgumentNullException(nameof(loginDto), "LoginDto null olamaz.");
             }
 
+            var rateLimitKey = $"login_attempts:{loginDto.Email}:{deviceId}";
+
+            // 1. Rate Limit kontrolü
+            if (await _redisService.IsRateLimitedAsync(rateLimitKey))
+            {
+                throw new UnauthorizedAccessException("Too many login attempts. Please try again later.");
+            }
+
+            // Kullanıcıyı al
+            var user = await _userRepository.GetKullaniciByEmailAsync(loginDto.Email);
+
+            if (user == null)
+            {
+                throw new UnauthorizedAccessException("Geçersiz kullanıcı.");
+            }
+
+            // Şifre doğrulama
+            if (!VerifyPassword(loginDto.Sifre, user.Sifre))
+            {
+                // Başarısız giriş denemesi sonrası deneme sayısını arttır
+                await _redisService.SetRateLimitAsync(rateLimitKey, TimeSpan.FromMinutes(1)); // 1 dakika süreyle
+                throw new UnauthorizedAccessException("Şifre yanlış.");
+            }
+
+            // Rate limit'i sıfırla
+            await _redisService.ResetLoginAttemptsAsync(rateLimitKey);
+
+            // JWT token oluştur
             var token = _jwtService.GenerateToken(user);
 
-            // Redis'e token kaydetme
-            _redisService.SetUserToken(user.KullaniciID.ToString(), token);
+            // Token'ı Redis'e kaydet
+            _redisService.SetUserToken(user.KullaniciID.ToString(), deviceId, token);
 
             return token;
         }
 
         private bool VerifyPassword(string enteredPassword, string storedPassword)
         {
-            // Password doğrulama işlemi (hashing vs)
-            return enteredPassword == storedPassword;
+            return enteredPassword == storedPassword;  // Burada şifre doğrulama işlemi yapılmalı (hashing vs.)
         }
     }
 }

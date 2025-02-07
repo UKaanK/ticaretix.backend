@@ -45,30 +45,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "logoutDto",
-        "Type": "ticaretix.Application.Dtos.Kullan\u0131c\u0131LogoutDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "deviceId",
+        "Name": "token",
         "Type": "System.String",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ticaretix.backend.Controllers.AuthController",
-    "Method": "LogoutAll",
-    "RelativePath": "api/Auth/logout-all",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "logoutDto",
-        "Type": "ticaretix.Application.Dtos.Kullan\u0131c\u0131LogoutDto",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

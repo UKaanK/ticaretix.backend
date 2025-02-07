@@ -99,16 +99,23 @@ namespace ticaretix.Infrastructure.Redis
             return await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
         }
 
-        public async Task RemoveUserToken(string userId, string deviceId)
-        { // 1️⃣ Kullanıcı ve cihazla ilişkili token'ı al
-            string token = await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
-            if (!string.IsNullOrEmpty(token))
+        public async Task RemoveUserToken(string token)
+        {
+            // 1️⃣ Token'e bağlı userId ve deviceId'yi al
+            string userDeviceInfo = await _database.StringGetAsync($"token_user:{token}");
+
+            if (!string.IsNullOrEmpty(userDeviceInfo))
             {
-                // 2️⃣ Eski token'ı sil
-                await _database.KeyDeleteAsync($"token_user:{token}");
+                var parts = userDeviceInfo.Split(':');
+                string userId = parts[0];
+                string deviceId = parts[1];
+
+                // 2️⃣ Kullanıcı ve cihaz ID ile kaydedilen token'ı al ve sil
                 await _database.KeyDeleteAsync($"user_token:{userId}:{deviceId}");
+                await _database.KeyDeleteAsync($"token_user:{token}");
             }
         }
+
 
 
         public void RemoveAllUserTokens(string userId)

@@ -10,7 +10,7 @@ namespace ticaretix.Core.Interfaces
     {
         Task SetUserToken(string userId,string deviceId, string token);
         Task<string> GetUserToken(string userId,string deviceId);
-        Task RemoveUserToken(string userId,string deviceId);
+        Task RemoveUserToken(string token);
         string GetUserIdByToken(string token);
         void RemoveAllUserTokens(string userId);
         Task<bool> IsRateLimitedAsync(string key);

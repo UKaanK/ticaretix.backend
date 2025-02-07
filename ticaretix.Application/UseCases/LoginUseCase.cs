@@ -28,33 +28,34 @@ namespace ticaretix.Application.UseCases
             var user = await _userRepository.GetKullaniciByEmailAsync(loginDto.Email);
             if (user == null)
             {
-                // Kullanıcı bulunamazsa giriş deneme sayısını artır
                 await _redisService.IncrementDeviceLoginAttemptAsync(deviceId);
                 throw new UnauthorizedAccessException("Geçersiz kullanıcı.");
             }
 
             string userId = user.KullaniciID.ToString();
 
-            // Kullanıcının veya cihazın rate limit'e takılıp takılmadığını kontrol et
+            // Kullanıcı veya cihaz rate limit'e takıldı mı kontrol et
             if (await _redisService.IsUserRateLimitedAsync(userId) || await _redisService.IsDeviceRateLimitedAsync(deviceId))
             {
                 throw new UnauthorizedAccessException("Çok fazla başarısız giriş denemesi. Lütfen daha sonra tekrar deneyin.");
             }
 
-            // Kullanıcının eski token'ını sil
-            await _redisService.RemoveUserToken(userId, deviceId);
+            // **Eski token'ı al ve sil**
+            string oldToken = await _redisService.GetUserToken(userId, deviceId);
+            if (!string.IsNullOrEmpty(oldToken))
+            {
+                await _redisService.RemoveUserToken(oldToken);
+            }
 
-            // Şifre doğrulaması
+            // Şifre doğrulama
             if (!VerifyPassword(loginDto.Sifre, user.Sifre))
             {
-                // Başarısız giriş denemesini artır
                 await _redisService.IncrementUserLoginAttemptAsync(userId);
                 await _redisService.IncrementDeviceLoginAttemptAsync(deviceId);
-
                 throw new UnauthorizedAccessException("Şifre yanlış.");
             }
 
-            // Kullanıcı başarılı giriş yaptıysa, giriş deneme sayısını sıfırla
+            // Başarılı giriş -> deneme sayacı sıfırla
             await _redisService.ResetUserLoginAttemptsAsync(userId);
             await _redisService.ResetDeviceLoginAttemptsAsync(deviceId);
 

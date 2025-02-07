@@ -59,21 +59,16 @@ namespace ticaretix.backend.Controllers
         }
 
         [HttpPost("logout")]
-        public IActionResult Logout([FromBody] KullanıcıLogoutDto logoutDto, [FromHeader] string deviceId)
+        public async Task<IActionResult> Logout([FromHeader] string token)
         {
-            if (string.IsNullOrEmpty(deviceId))
-                return BadRequest("Device ID is required.");
+            if (string.IsNullOrEmpty(token))
+                return BadRequest("Token is required.");
 
-            _redisService.RemoveUserToken(logoutDto.UserId, deviceId);
-            return Ok(new { message = "Logout successful for this device" });
+            await _redisService.RemoveUserToken(token);
+            return Ok(new { message = "Logout successful" });
         }
 
-        [HttpPost("logout-all")]
-        public IActionResult LogoutAll([FromBody] KullanıcıLogoutDto logoutDto)
-        {
-            _redisService.RemoveAllUserTokens(logoutDto.UserId);
-            return Ok(new { message = "Logout successful for all devices" });
-        }
+     
     }
 
     }

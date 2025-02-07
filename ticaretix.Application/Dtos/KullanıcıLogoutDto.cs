@@ -8,7 +8,7 @@ namespace ticaretix.Application.Dtos
 {
     public class KullanıcıLogoutDto
     {
-        public string UserId { get; set; }
+        public string tokenId { get; set; }
 
     }
 }

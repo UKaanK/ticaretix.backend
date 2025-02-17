@@ -11,7 +11,7 @@ using ticaretix.Infrastructure.Data;
 
 namespace ticaretix.Infrastructure.Repositories
 {
-    internal class KullaniciRepository(AppDbContext dbContext) : IKullaniciRepository
+    public class KullaniciRepository(AppDbContext dbContext) : IKullaniciRepository
     {
         public async Task<KullaniciEntity> AddKullaniciAsync(KullaniciEntity entity)
         {

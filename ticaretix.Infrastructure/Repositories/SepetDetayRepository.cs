@@ -9,7 +9,7 @@ using ticaretix.Infrastructure.Data;
 
 namespace ticaretix.Infrastructure.Repositories
 {
-    internal class SepetDetayRepository(AppDbContext dbContext) : ISepetDetaylarıRepository
+    public class SepetDetayRepository(AppDbContext dbContext) : ISepetDetaylarıRepository
     {
         public async Task<SepetDetaylariEntity> AddSepetUrunAsync(SepetDetaylariEntity entity)
         {

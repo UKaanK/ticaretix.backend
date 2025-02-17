@@ -10,7 +10,7 @@ using ticaretix.Infrastructure.Data;
 
 namespace ticaretix.Infrastructure.Repositories
 {
-    internal class SepetRepository(AppDbContext dbContext) : ISepetRepository
+    public class SepetRepository(AppDbContext dbContext) : ISepetRepository
     {
         public async Task<bool> DeleteSepetAsync(int sepetId)
         {

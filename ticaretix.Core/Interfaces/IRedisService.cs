@@ -10,6 +10,8 @@ namespace ticaretix.Core.Interfaces
     {
         Task SetUserToken(string userId,string deviceId, string token);
         Task<string> GetUserToken(string userId,string deviceId);
+        Task<string> GetUserIdByRefreshTokenAsync(string refreshToken, string deviceId);
+
         Task RemoveUserToken(string token);
         string GetUserIdByToken(string token);
         void RemoveAllUserTokens(string userId);
@@ -22,6 +24,8 @@ namespace ticaretix.Core.Interfaces
         Task ResetDeviceLoginAttemptsAsync(string deviceId);
         Task IncrementDeviceLoginAttemptAsync(string deviceId);
         Task ResetUserLoginAttemptsAsync(string userId);
+        Task<string> GetRefreshToken(string userId,string deviceId);
+        Task SetRefreshToken(string userId, string deviceId,string refreshToken);
         //Cache İşlemleri
         Task SetAsync<T>(string key, T value);
         Task<T> GetAsync<T>(string key);

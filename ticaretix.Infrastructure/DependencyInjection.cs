@@ -8,6 +8,8 @@ using ticaretix.Application.UseCases;
 using ticaretix.Core.Entities;
 using ticaretix.Core.Interfaces;
 using ticaretix.Infrastructure.Data;
+using ticaretix.Infrastructure.Logging;
+using ticaretix.Infrastructure.Middlewares;
 using ticaretix.Infrastructure.Redis;
 using ticaretix.Infrastructure.Repositories;
 
@@ -38,17 +40,22 @@ namespace ticaretix.Infrastructure
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            services.AddScoped<IUrunlerRepository, UrunlerRepository>();
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IKullaniciRepository, KullaniciRepository>();
-            services.AddScoped<ISepetDetaylarıRepository, SepetDetayRepository>();
-            services.AddScoped<ISepetRepository, SepetRepository>();
-            services.AddScoped<IJwtService, JwtService>();
-            services.AddScoped<IAuthService, AuthService>();
-            services.AddScoped<LoginUseCase>();
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
+            services.AddSingleton<IUrunlerRepository, UrunlerRepository>();
+            services.AddSingleton<ICategoryRepository, CategoryRepository>();
+            services.AddSingleton<IKullaniciRepository, KullaniciRepository>();
+            services.AddSingleton<ISepetDetaylarıRepository, SepetDetayRepository>();
+            services.AddSingleton<ISepetRepository, SepetRepository>();
+            services.AddSingleton<IJwtService, JwtService>();
+            services.AddSingleton<IAuthService, AuthService>();
+            services.AddSingleton<LoginUseCase>();
+            services.AddSingleton<RefreshTokenUseCase>();
+            //services.AddTransient<ExceptionMiddleware>(); // Transient olarak kaydedin
 
-            services.AddScoped<IRedisService, RedisService>();  // Redis servisini ekleyin
+             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost:6379"));
+            services.AddSingleton<IJwtDecoderService, JwtDecoderService>();
+
+
+            services.AddSingleton<IRedisService, RedisService>();  // Redis servisini ekleyin
                                                                 // Redis'i yapılandırma
 
 

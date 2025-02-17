@@ -5,7 +5,7 @@ using ticaretix.Infrastructure.Data;
 
 namespace ticaretix.Infrastructure.Repositories
 {
-    internal class UrunlerRepository(AppDbContext dbContext) : IUrunlerRepository
+    public class UrunlerRepository(AppDbContext dbContext) : IUrunlerRepository
     {
         public async Task<UrunlerEntity> AddUrunAsync(UrunlerEntity entity)
         {

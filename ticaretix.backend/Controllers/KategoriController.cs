@@ -18,6 +18,7 @@ namespace ticaretix.backend.Controllers
             _sender = sender;
         }
 
+
         [HttpGet("GetAllKategori")]
         public async Task<IActionResult> GetAlKategoriAsync()
         {

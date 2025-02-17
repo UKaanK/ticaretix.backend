@@ -15,7 +15,6 @@ namespace ticaretix.Application
         public static IServiceCollection AddApplicationDI(this IServiceCollection services)
         {
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<AddKullaniciCommand>());
-
             return services;
         }
     }

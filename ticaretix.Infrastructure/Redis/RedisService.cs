@@ -71,6 +71,18 @@ namespace ticaretix.Infrastructure.Redis
             var attempts = await _database.StringGetAsync($"login_attempts:device:{deviceId}");
             return attempts != RedisValue.Null && int.Parse(attempts) >= 5;
         }
+        public async Task<string> GetUserIdByRefreshTokenAsync(string refreshToken, string deviceId)
+        {
+            // Redis'te refresh token ile kullanıcı id'sini arıyoruz
+            var userId = await _database.StringGetAsync($"refresh_token:{refreshToken}:{deviceId}");
+
+            if (userId.IsNullOrEmpty)
+            {
+                return null; // Eğer kullanıcı id'si bulunamazsa null döner
+            }
+
+            return userId;
+        }
 
         public async Task SetRateLimitAsync(string key, TimeSpan expirationTime)
         {
@@ -99,6 +111,17 @@ namespace ticaretix.Infrastructure.Redis
             return await _database.StringGetAsync($"user_token:{userId}:{deviceId}");
         }
 
+        public async Task SetRefreshToken(string userId,string deviceId, string refreshToken)
+        {
+            // Refresh token'ı veritabanında sakla (örn. Redis'te)
+            await _database.StringSetAsync($"refresh_token:{userId}:{deviceId}", refreshToken, TimeSpan.FromDays(7));  // 7 gün geçerli
+        }
+
+        public async Task<string> GetRefreshToken(string userId,string deviceId)
+        {
+            return await _database.StringGetAsync($"refresh_token:{userId}:{deviceId}");
+        }
+
         public async Task RemoveUserToken(string token)
         {
             // 1️⃣ Token'e bağlı userId ve deviceId'yi al
@@ -113,8 +136,12 @@ namespace ticaretix.Infrastructure.Redis
                 // 2️⃣ Kullanıcı ve cihaz ID ile kaydedilen token'ı al ve sil
                 await _database.KeyDeleteAsync($"user_token:{userId}:{deviceId}");
                 await _database.KeyDeleteAsync($"token_user:{token}");
+
+                // 3️⃣ Refresh token'ı da sil
+                await _database.KeyDeleteAsync($"refresh_token:{userId}:{deviceId}");
             }
         }
+
 
 
 

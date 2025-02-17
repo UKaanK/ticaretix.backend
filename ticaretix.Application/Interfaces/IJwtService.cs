@@ -9,6 +9,7 @@ namespace ticaretix.Application.Interfaces
 {
     public interface IJwtService
     {
+        string GenerateRefreshToken(KullaniciEntity kullanici);
         string GenerateToken(KullaniciEntity kullanici);
     }
 }

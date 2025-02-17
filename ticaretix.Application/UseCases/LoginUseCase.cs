@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using ticaretix.Application.Dtos;
 using ticaretix.Application.Interfaces;
+using ticaretix.Core.Exceptions;
 using ticaretix.Core.Interfaces;
 
 namespace ticaretix.Application.UseCases
@@ -18,7 +19,7 @@ namespace ticaretix.Application.UseCases
             _jwtService = jwtService;
             _redisService = redisService;
         }
-        public async Task<string> ExecuteAsync(KullaniciLoginDto loginDto, string deviceId)
+        public async Task<(string accessToken, string refreshToken)> ExecuteAsync(KullaniciLoginDto loginDto, string deviceId)
         {
             if (loginDto == null)
             {
@@ -52,21 +53,26 @@ namespace ticaretix.Application.UseCases
             {
                 await _redisService.IncrementUserLoginAttemptAsync(userId);
                 await _redisService.IncrementDeviceLoginAttemptAsync(deviceId);
-                throw new UnauthorizedAccessException("Şifre yanlış.");
+                throw new ApiException(ErrorCodes.S502);
             }
 
             // Başarılı giriş -> deneme sayacı sıfırla
             await _redisService.ResetUserLoginAttemptsAsync(userId);
             await _redisService.ResetDeviceLoginAttemptsAsync(deviceId);
 
-            // Yeni token oluştur ve Redis'e kaydet
-            var token = _jwtService.GenerateToken(user);
-            await _redisService.SetUserToken(userId, deviceId, token);
+            // Yeni access token ve refresh token oluştur
+            var accessToken = _jwtService.GenerateToken(user);  // Access token oluşturuluyor
+            var refreshToken = _jwtService.GenerateRefreshToken(user);  // Refresh token oluşturuluyor
 
-            return token;
+            // Refresh token'ı Redis'e kaydet
+            await _redisService.SetRefreshToken(userId, deviceId, refreshToken);
+
+            // Access token'ı Redis'e kaydet
+            await _redisService.SetUserToken(userId, deviceId, accessToken);
+
+            // Refresh token ve access token'ı geri döndür
+            return (accessToken, refreshToken);
         }
-
-
 
         private bool VerifyPassword(string enteredPassword, string storedPassword)
         {

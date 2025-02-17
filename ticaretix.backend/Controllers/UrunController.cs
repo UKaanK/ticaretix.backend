@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ticaretix.Application.Commands;
@@ -31,9 +32,15 @@ namespace ticaretix.backend.Controllers
         }
 
 
+        [Authorize(Roles = "yonetici")] // Sadece Admin erişebilir
         [HttpPost("AddUrun")]
         public async Task<IActionResult> AddUrunAsync([FromBody] UrunlerEntity urunlerEntity)
         {
+            if (!User.IsInRole("yonetici    ")) // Ekstra güvenlik için
+            {
+                return Forbid(); // 403 Forbidden döndür
+            }
+
             var command = new AddUrunCommand(urunlerEntity);
             var result = await _sender.Send(command);
             return Ok(result);

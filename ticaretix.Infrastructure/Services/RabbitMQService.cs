@@ -34,11 +34,11 @@ namespace ticaretix.Infrastructure.Services
         public async Task PublishAsync(string message)
         {
             var body = Encoding.UTF8.GetBytes(message);
-
+            
             await _channel.BasicPublishAsync(exchange: "", routingKey: _queueName, body: body);
         }
 
-        public async Task ConsumeAsync()
+        public async Task ConsumeAsync() 
         {
             var consumer = new AsyncEventingBasicConsumer(_channel);
             consumer.ReceivedAsync += async (model, ea) =>

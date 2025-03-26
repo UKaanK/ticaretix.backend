@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticaretix.backend", "ticaretix.backend\ticaretix.backend.csproj", "{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ticaretix.backend", "ticaretix.backend\ticaretix.backend.csproj", "{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticaretix.Application", "ticaretix.Application\ticaretix.Application.csproj", "{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ticaretix.Application", "ticaretix.Application\ticaretix.Application.csproj", "{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticaretix.Core", "ticaretix.Core\ticaretix.Core.csproj", "{EF040A8B-131C-42BB-8B50-5AF62C471F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ticaretix.Core", "ticaretix.Core\ticaretix.Core.csproj", "{EF040A8B-131C-42BB-8B50-5AF62C471F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticaretix.Infrastructure", "ticaretix.Infrastructure\ticaretix.Infrastructure.csproj", "{3EFDE899-27F8-4426-95FE-F01ABDD497D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ticaretix.Infrastructure", "ticaretix.Infrastructure\ticaretix.Infrastructure.csproj", "{3EFDE899-27F8-4426-95FE-F01ABDD497D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ticaretix.Tests", "ticaretix.Tests\ticaretix.Tests.csproj", "{D410FFC8-4862-435C-B87E-CD42E923DC02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3EFDE899-27F8-4426-95FE-F01ABDD497D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EFDE899-27F8-4426-95FE-F01ABDD497D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EFDE899-27F8-4426-95FE-F01ABDD497D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D410FFC8-4862-435C-B87E-CD42E923DC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D410FFC8-4862-435C-B87E-CD42E923DC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D410FFC8-4862-435C-B87E-CD42E923DC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D410FFC8-4862-435C-B87E-CD42E923DC02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

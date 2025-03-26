@@ -46,7 +46,13 @@ namespace ticaretix.backend.Controllers
             Log.Information("Kullanıcı başarıyla bulundu: UserId={UserId}", userId);
             return Ok(new { userId });
         }
-
+        /// <summary>
+        /// Login Methodu
+        /// </summary>
+        /// <param name="loginDto"></param>
+        /// <param name="deviceId"></param>
+        /// <returns></returns>
+        /// <exception cref="ApiException"></exception>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] KullaniciLoginDto loginDto, [FromHeader] string deviceId)
         {

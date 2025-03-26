@@ -36,7 +36,7 @@ namespace ticaretix.backend.Controllers
         [HttpPost("AddUrun")]
         public async Task<IActionResult> AddUrunAsync([FromBody] UrunlerEntity urunlerEntity)
         {
-            if (!User.IsInRole("yonetici    ")) // Ekstra güvenlik için
+            if (!User.IsInRole("yonetici")) // Ekstra güvenlik için
             {
                 return Forbid(); // 403 Forbidden döndür
             }
@@ -83,5 +83,7 @@ namespace ticaretix.backend.Controllers
             var result = await _sender.Send(command);
             return Ok(result);
         }
+
+
     }
 }

@@ -9,6 +9,7 @@ using ticaretix.Core.Interfaces;
 
 namespace ticaretix.Application.Queries.SepetQueries
 {
+
     public record GetAllSepetDetayQuery():IRequest<IEnumerable<SepetDetaylariEntity>>;
     public class GetAllSepetDetayQueryHandler(ISepetDetaylarıRepository sepetDetaylarıRepository) : IRequestHandler<GetAllSepetDetayQuery, IEnumerable<SepetDetaylariEntity>>
     {

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using ticaretix.Core.Exceptions;
+using ticaretix.Core.Interfaces;
 using ticaretix.Infrastructure.Logging; // RabbitMQLoggerService'yi içerir
 
 namespace ticaretix.Infrastructure.Middlewares
@@ -14,16 +15,20 @@ namespace ticaretix.Infrastructure.Middlewares
         private readonly RequestDelegate _next;
         private readonly ILogger<ExceptionMiddleware> _logger;
         private readonly RabbitMQLoggerService _rabbitLogger;
+        private readonly ILoggerService _elasticLogger;
+
 
         // RabbitMQLoggerService, DI ile enjekte ediliyor
-        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, RabbitMQLoggerService rabbitLogger)
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, RabbitMQLoggerService rabbitLogger, ILoggerService elasticLogger)
         {
             _next = next;
             _logger = logger;
             _rabbitLogger = rabbitLogger;
+            _elasticLogger = elasticLogger;
+
         }
 
-        private static async Task HandleExceptionAsync(HttpContext context, Exception exception, Microsoft.Extensions.Logging.ILogger logger, RabbitMQLoggerService rabbitLogger)
+        private static async Task HandleExceptionAsync(HttpContext context, Exception exception, Microsoft.Extensions.Logging.ILogger logger, RabbitMQLoggerService rabbitLogger, ILoggerService elasticLogger)
         {
             context.Response.ContentType = "application/json";
             // Varsayılan olarak 500 hata kodu
@@ -62,7 +67,7 @@ namespace ticaretix.Infrastructure.Middlewares
             }
 
             // Hata logunu RabbitMQ'ya gönder (await kullanılıyor, çünkü metod asenkron)
-            await rabbitLogger.LogErrorAsync(errorMessage);
+            await elasticLogger.LogErrorAsync(errorMessage);
             logger.LogError(exception, "Hata yakalandı: {ErrorMessage}", exception.Message);
             // Elasticsearch'e de log gönderme
             Log.Error($"Hata: {exception.Message} - {errorMessage}");
@@ -77,7 +82,7 @@ namespace ticaretix.Infrastructure.Middlewares
             }
             catch (Exception ex)
             {
-                await HandleExceptionAsync(context, ex, _logger, _rabbitLogger);
+                await HandleExceptionAsync(context, ex, _logger, _rabbitLogger,_elasticLogger);
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Nest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,12 +44,12 @@ namespace ticaretix.Infrastructure.Repositories
 
         public async Task<bool> DeleteSepetUrunAsync(int urunId, int sepetId)
         {
-            // Ürün ve sepet ID geçerli mi?
-            if (urunId <= 0 || sepetId <= 0)
-                throw new ArgumentException("Geçersiz ürün veya sepet ID!");
 
+            Console.WriteLine(urunId);
+            Console.WriteLine(sepetId);
             var sepetDetay = await dbContext.SepetDetaylari
-                .FirstOrDefaultAsync(x => x.UrunID == urunId && x.SepetID == sepetId);
+      .FirstOrDefaultAsync(x => x.UrunID == urunId && x.SepetID == sepetId);
+
 
             // 🔴 Ürün ve sepet bulundu mu?
             if (sepetDetay is null)
@@ -62,6 +63,7 @@ namespace ticaretix.Infrastructure.Repositories
 
         public async Task<IEnumerable<SepetDetaylariEntity>> GetSepetDetay()
         {
+
             return await dbContext.SepetDetaylari.ToListAsync();
         }
 

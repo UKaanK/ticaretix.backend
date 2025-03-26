@@ -283,7 +283,7 @@
   {
     "ContainingType": "ticaretix.backend.Controllers.SepetController",
     "Method": "DeleteSepetUrunAsync",
-    "RelativePath": "api/Sepet/DeleteSepetUrun",
+    "RelativePath": "api/Sepet/DeleteSepetUrun/{urunId}/{sepetId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -291,12 +291,12 @@
       {
         "Name": "urunId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "sepetId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

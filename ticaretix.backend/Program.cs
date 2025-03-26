@@ -85,7 +85,7 @@ builder.Services.Configure<JwtSettings>(options =>
 });
 // Bağlantı stringini burada doğrudan tanımla
 
-
+builder.Services.AddHttpClient<ILoggerService, ElasticsearchLoggerService>();
 builder.Services.AddScoped<IUrunlerRepository, UrunlerRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IKullaniciRepository, KullaniciRepository>();
@@ -135,7 +135,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddApplicationDI(); // MediatR
 //builder.Services.AddInfrastructureDI(builder.Configuration); // Repository
 

@@ -25,6 +25,7 @@ namespace ticaretix.Infrastructure.Repositories
 
         public async Task<IEnumerable<SepetEntity>> GetSepet()
         {
+
             return await dbContext.Sepetler.ToListAsync();
         }
 

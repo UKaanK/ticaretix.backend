@@ -29,6 +29,7 @@ namespace ticaretix.backend.Controllers
         [HttpGet("GetSepetDetay")]
         public async Task<IActionResult> GetSepetDetay()
         {
+
             var command = new GetAllSepetDetayQuery();
             var result = await _sender.Send(command);
             return Ok(result);
@@ -50,7 +51,7 @@ namespace ticaretix.backend.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("DeleteSepetUrun")]
+        [HttpDelete("DeleteSepetUrun/{urunId}/{sepetId}")]
         public async Task<IActionResult> DeleteSepetUrunAsync([FromRoute] int urunId, [FromRoute] int sepetId) { 
             var command = new DeleteSepetUrunCommand(urunId, sepetId);
             var result = await _sender.Send(command);

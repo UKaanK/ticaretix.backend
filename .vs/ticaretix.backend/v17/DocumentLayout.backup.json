@@ -3,64 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\usecases\\loginusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\usecases\\loginusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D410FFC8-4862-435C-B87E-CD42E923DC02}|ticaretix.Tests\\ticaretix.Tests.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.tests\\ticaretix.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D410FFC8-4862-435C-B87E-CD42E923DC02}|ticaretix.Tests\\ticaretix.Tests.csproj|solutionrelative:ticaretix.tests\\ticaretix.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\urunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\interfaces\\iurunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\interfaces\\iurunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\interfaces\\isepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\interfaces\\isepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\sepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\sepetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\repositories\\sepetdetayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\repositories\\sepetdetayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\logging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\logging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D410FFC8-4862-435C-B87E-CD42E923DC02}|ticaretix.Tests\\ticaretix.Tests.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.tests\\loginusecasetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D410FFC8-4862-435C-B87E-CD42E923DC02}|ticaretix.Tests\\ticaretix.Tests.csproj|solutionrelative:ticaretix.tests\\loginusecasetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\controllers\\uruncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\entities\\kullanicientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\entities\\kullanicientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.application\\interfaces\\ijwtdecoderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD2BF7E-186A-435F-A5D6-4B8E893EAAF5}|ticaretix.Application\\ticaretix.Application.csproj|solutionrelative:ticaretix.application\\interfaces\\ijwtdecoderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\interfaces\\iurunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\interfaces\\iurunlerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75FF445E-D2CC-4B0A-AE49-3ED29F05326A}|ticaretix.backend\\ticaretix.backend.csproj|solutionrelative:ticaretix.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EFDE899-27F8-4426-95FE-F01ABDD497D8}|ticaretix.Infrastructure\\ticaretix.Infrastructure.csproj|solutionrelative:ticaretix.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|c:\\users\\casper excalibur\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF040A8B-131C-42BB-8B50-5AF62C471F20}|ticaretix.Core\\ticaretix.Core.csproj|solutionrelative:ticaretix.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,201 +62,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 876,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "ticaretix.Core\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\DependencyInjection.cs",
-              "RelativeToolTip": "ticaretix.Core\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:08:18.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ISepetRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\ISepetRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\ISepetRepository.cs",
-              "RelativeToolTip": "ticaretix.Core\\Interfaces\\ISepetRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:05.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUrunlerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
-              "RelativeToolTip": "ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:50.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\UseCases\\LoginUseCase.cs",
-              "RelativeDocumentMoniker": "ticaretix.Application\\UseCases\\LoginUseCase.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\UseCases\\LoginUseCase.cs",
-              "RelativeToolTip": "ticaretix.Application\\UseCases\\LoginUseCase.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:58:52.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwA0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:59:59.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SepetDetayRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\SepetDetayRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:57:39.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UrunlerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\UrunlerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:56:52.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "KullaniciRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\KullaniciRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwA0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:56:47.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SepetRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Repositories\\SepetRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:56:26.545Z",
+              "Title": "ticaretix.Tests",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Tests\\ticaretix.Tests.csproj",
+              "RelativeDocumentMoniker": "ticaretix.Tests\\ticaretix.Tests.csproj",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Tests\\ticaretix.Tests.csproj",
+              "RelativeToolTip": "ticaretix.Tests\\ticaretix.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-25T22:25:23.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Program.cs",
-              "RelativeDocumentMoniker": "ticaretix.backend\\Program.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Program.cs",
-              "RelativeToolTip": "ticaretix.backend\\Program.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAQwIoAAAAAAAAAAAAAAA==",
+              "Title": "LoginUseCaseTest.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Tests\\LoginUseCaseTest.cs",
+              "RelativeDocumentMoniker": "ticaretix.Tests\\LoginUseCaseTest.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Tests\\LoginUseCaseTest.cs",
+              "RelativeToolTip": "ticaretix.Tests\\LoginUseCaseTest.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:18:21.688Z",
+              "WhenOpened": "2025-03-25T22:25:07.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RabbitMQConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Logging\\RabbitMQConsumer.cs",
-              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Logging\\RabbitMQConsumer.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Logging\\RabbitMQConsumer.cs",
-              "RelativeToolTip": "ticaretix.Infrastructure\\Logging\\RabbitMQConsumer.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwFkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:14:20.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "ticaretix.Application\\Services\\JwtService.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Services\\JwtService.cs",
               "RelativeToolTip": "ticaretix.Application\\Services\\JwtService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:14:10.56Z",
+              "WhenOpened": "2025-03-23T23:29:37.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UrunController.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\UrunController.cs",
-              "RelativeDocumentMoniker": "ticaretix.backend\\Controllers\\UrunController.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Controllers\\UrunController.cs",
-              "RelativeToolTip": "ticaretix.backend\\Controllers\\UrunController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwDEAAABNAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "ticaretix.Application\\Interfaces\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "ticaretix.Application\\Interfaces\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T00:46:29.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T23:27:44.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "KullaniciEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\KullaniciEntity.cs",
-              "RelativeDocumentMoniker": "ticaretix.Core\\Entities\\KullaniciEntity.cs",
-              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Entities\\KullaniciEntity.cs",
-              "RelativeToolTip": "ticaretix.Core\\Entities\\KullaniciEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ticaretix.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "ticaretix.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T19:16:19.762Z"
+              "WhenOpened": "2025-03-23T23:27:49.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "ticaretix.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "ticaretix.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T23:27:47.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IJwtDecoderService.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IJwtDecoderService.cs",
+              "RelativeDocumentMoniker": "ticaretix.Application\\Interfaces\\IJwtDecoderService.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Application\\Interfaces\\IJwtDecoderService.cs",
+              "RelativeToolTip": "ticaretix.Application\\Interfaces\\IJwtDecoderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T23:27:40.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUrunlerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
+              "RelativeDocumentMoniker": "ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
+              "RelativeToolTip": "ticaretix.Core\\Interfaces\\IUrunlerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T02:09:23.912Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json",
+              "RelativeDocumentMoniker": "ticaretix.backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\appsettings.json",
+              "RelativeToolTip": "ticaretix.backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-20T01:32:29.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ticaretix.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T01:32:04.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Program.cs",
+              "RelativeDocumentMoniker": "ticaretix.backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.backend\\Program.cs",
+              "RelativeToolTip": "ticaretix.backend\\Program.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAYwJkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T19:10:28.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "ticaretix.Infrastructure\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "ticaretix.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T16:49:41.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T18:27:21.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ticaretix.Core\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Casper EXCALIBUR\\source\\repos\\ticaretix.backend\\src\\ticaretix.backend\\ticaretix.Core\\DependencyInjection.cs",
+              "RelativeToolTip": "ticaretix.Core\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T19:13:49.979Z"
             }
           ]
         }
